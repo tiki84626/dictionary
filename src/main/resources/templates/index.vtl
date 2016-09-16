@@ -1,4 +1,6 @@
-<h1>Task list!</h1>
+<h1>Dictionary!</h1>
+
+
 #if ($tasks)
   <ul>
     #foreach ($task in $tasks)
@@ -9,9 +11,9 @@
   <p>No task!</p>
 #end
 
-<p>Add a new Task:</p>
+<p>Add New Word to Dictionary:</p>
 
-<form action="/tasks" method="post">
+<form action="/word" method="post">
   <label for="description">Task Description</label>
   <input id="description" name="description" type="text">
 
