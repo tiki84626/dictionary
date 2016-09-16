@@ -7,12 +7,12 @@ public class App {
   public static void main(String[] args) {
     staticFileLocation("/public");
     String layout = "templates/layout.vtl";
-    Word newWord = new Word();
+    Word newWord = new Word("newWord");
 
 
 
 
 
-    
+
   }
 }

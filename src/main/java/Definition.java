@@ -11,6 +11,27 @@ public class Definition {
     mDef4 = _def4;
   }
 
+  public static void main(String[] args) {
+    Definition test = new Definition(
+      "the means by which the presence, quality, or genuineness of anything is" +
+      " determined; a means of trial.",
+      "the trial of the quality of something.",
+      "a particular process or method for trying or assessing.",
+      "a set of questions, problems, or the like, used as a means of evaluating" +
+      " the abilities, aptitudes, skills, or performance of an individual or group;" +
+      " examination."
+      );
+    Definition joke = new Definition(
+      "something said or done to provoke laughter or cause amusement, as a witticism," +
+      " a short and amusing anecdote, or a prankish act.",
+      "something that is amusing or ridiculous, especially because of being ludicrously" +
+      " inadequate or a sham; a thing, situation, or person laughed at rather than taken" +
+      " seriously; farce.",
+      "a matter that need not be taken very seriously; trifling matter.",
+      "something that does not present the expected challenge; something very easy."
+      );
+  }
+
   public String getDef1() {
     return mDef1;
   }
