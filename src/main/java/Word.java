@@ -5,6 +5,10 @@ public class Word {
     mWord = _word;
   }
 
+  public static void main(String[] args) {
+    Word test = new Word("test");
+  }
+
   public String getWord() {
     return mWord;
   }
