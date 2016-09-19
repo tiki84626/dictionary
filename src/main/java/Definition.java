@@ -21,6 +21,7 @@ public class Definition {
       " the abilities, aptitudes, skills, or performance of an individual or group;" +
       " examination."
       );
+
     Definition joke = new Definition(
       "something said or done to provoke laughter or cause amusement, as a witticism," +
       " a short and amusing anecdote, or a prankish act.",

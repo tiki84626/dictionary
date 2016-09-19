@@ -1,21 +1,11 @@
 <h1>Dictionary!</h1>
+<h3>Add New Word to Dictionary:</h3>
 
+<form action="/word">
+  <div class="form-group">
+    <label for="input-word">Word:</label>
+    <input class="form-control" id="input-word" name="input-word" type="text">
+  </div>
 
-#if ($tasks)
-  <ul>
-    #foreach ($task in $tasks)
-      <li>$task.getDescription()</li>
-    #end
-  </ul>
-#else
-  <p>No task!</p>
-#end
-
-<p>Add New Word to Dictionary:</p>
-
-<form action="/word" method="post">
-  <label for="description">Task Description</label>
-  <input id="description" name="description" type="text">
-
-  <button type="submit" class="btn btn-default">Add task</button>
+  <button type="submit" class="btn btn-default">Add Word!</button>
 </form>
