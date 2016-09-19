@@ -34,4 +34,20 @@ public class WordDefTest {
     assertEquals(true, Word.all().contains(secondWord));
   }
 
+  @Test
+  public void clear_emptiesAllWordsFromArrayList_0() {
+    Definition testDefinition = new Definition("Fist Def", "Second Def", "Third Def", "Fourth Def");
+    Word testWord = new Word("testWord", testDefinition);
+    Word.clear();
+    assertEquals(Word.all().size(), 0);
+  }
+
+  @Test
+  public void getId_wordsInstantiateWithAnID_1() {
+    Word.clear();
+    Definition testDefinition = new Definition("Fist Def", "Second Def", "Third Def", "Fourth Def");
+    Word testWord = new Word("testWord", testDefinition);
+    assertEquals((Integer) 1, testWord.getId());
+  }
+
 }
