@@ -36,16 +36,16 @@ public class Word {
     return mDef;
   }
 
-  public Integer getId() {
-    return mId;
-  }
-
   public static List<Word> all() {
     return mDictionary;
   }
 
   public static void clear() {
     mDictionary.clear();
+  }
+
+  public Integer getId() {
+    return mId;
   }
 
   public static Word find(int id) {
